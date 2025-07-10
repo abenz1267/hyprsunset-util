@@ -56,7 +56,7 @@ func main() {
 
 	light := daylight{}
 
-	if sunriseCustom != "" || sunsetCustom != "" {
+	if sunriseCustom == "" || sunsetCustom == "" {
 		light = getTimeFromWeb()
 	}
 
